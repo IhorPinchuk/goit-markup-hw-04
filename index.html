@@ -37,11 +37,19 @@
         <ul class="contacts list">
           <li>
             <a class="contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+              ><svg class="contact-icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li>
-            <a class="contact" href="tel:+380961111111">+38 096 111 11 11</a>
+            <a class="contact" href="tel:+380961111111"
+              ><svg class="contact-icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -50,38 +58,38 @@
     <!--main-->
     <main>
       <!--герой-->
-      <section class="hero">
-                  <div class="container">
-            <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-            <button class="hero-button" type="button">Замовити послугу</button>
-          </div>        
+      <section class="hero overlya">
+        <div class="container">
+          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+          <button class="hero-button" type="button">Замовити послугу</button>
+        </div>
       </section>
       <!-- особливості -->
       <section class="section feature">
         <div class="container">
           <h2 class="section-title visually-hidden">Особливості</h2>
           <ul class="feature-list list">
-            <li>
+            <li class="feature-item icon-antenna">
               <h3 class="title">Увага до деталей</h3>
               <p class="text">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="feature-item icon-clock">
               <h3 class="title">Пунктуальність</h3>
               <p class="text">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="feature-item icon-diagram">
               <h3 class="title">Планування</h3>
               <p class="text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="feature-item icon-astronaut">
               <h3 class="title">Сучасні технології</h3>
               <p class="text">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -139,6 +147,34 @@
               <div class="team-card">
                 <h3 class="title">Ігор Дем'яненко</h3>
                 <p lang="en" class="text">Product Designer</p>
+                <ul class="team-soc-list">
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="soc-icon" width="20" height="20">
+                        <use
+                          href="./images/icons.svg#icon-instagram"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="soc-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="soc-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use></svg
+                    ></a>
+                  </li>
+                  <li class="team-soc-item">
+                    <a class="team-soc-link" href=""
+                      ><svg class="soc-icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use></svg
+                    ></a>
+                  </li>
+                </ul>
               </div>
             </li>
             <li class="team-item">

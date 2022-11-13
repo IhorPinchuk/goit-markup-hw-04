@@ -47,8 +47,7 @@ ul {
 
 body {
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.03em;
-  background-color: var(--primary-bg-color);
+  letter-spacing: 0.03em;  
   color: var(--primary-text-color);
 }
 
@@ -147,15 +146,19 @@ img {
   display: flex;
   margin-left: auto;
   gap: 50px;
-}
+  }
 
 .contacts .contact {
-  color: var(--primary-text-color);
+    color: var(--primary-text-color);
 }
 
 .contacts .contact:hover,
 .contacts .contact:focus {
   color: var(--accent-color);
+}
+
+.contacts .contact-icon {
+  fill: currentColor;
 }
 
 /* Hero */
@@ -165,11 +168,17 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-color: var(--bg-hero-color);
+}
+
+.overlya {
   width: 1600px;
   height: 600px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)), url(../images/Hero.jpg);
-  background-color: var(--bg-hero-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Hero.jpg);
 }
 
 .hero-title {
@@ -238,6 +247,32 @@ img {
   gap: 30px;
 }
 
+.feature-item::before {
+display: block;
+content: "";
+height: 120px;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: var(--additional-bg-color);
+}
+
+.icon-antenna::before {
+  background-image: url(../images/antenna.svg);
+    }
+
+.icon-clock::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-diagram::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-astronaut::before {
+  background-image: url(../images/astronaut.svg);
+}
+
 .feature {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -245,6 +280,7 @@ img {
 
 .feature-list .title {
   margin-bottom: 10px;
+  padding-top: 30px;
   font-size: 14px;
   line-height: 1.1429;
   text-transform: uppercase;
@@ -303,6 +339,22 @@ img {
   text-align: center;
   font-size: 16px;
   line-height: 1.1875;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.team-soc-item {
+  
+}
+
+.team-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 /* Footer */
