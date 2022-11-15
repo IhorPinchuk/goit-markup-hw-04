@@ -155,6 +155,9 @@ img {
 }
 
 .contacts .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--primary-text-color);
 }
 
@@ -164,6 +167,7 @@ img {
 }
 
 .contacts .contact-icon {
+  margin-right: 10px;
   fill: currentColor;
 }
 
@@ -248,45 +252,28 @@ img {
   overflow: hidden;
 }
 
-.feature-list {
-  display: flex;
-  gap: 30px;
-}
-
-.feature-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: var(--additional-bg-color);
-}
-
-.icon-antenna::before {
-  background-image: url(../images/antenna.svg);
-}
-
-.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
-}
-
 .feature {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+.feature-list {
+  display: flex;
+  gap: 30px;
+}
+
+.festure-wrapper-icon {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  background-color: var(--additional-bg-color);
+}
+
 .feature-list .title {
   margin-bottom: 10px;
-  padding-top: 30px;
   font-size: 14px;
   line-height: 1.1429;
   text-transform: uppercase;
@@ -329,12 +316,12 @@ img {
 }
 
 .team-card {
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
 .team-list .title {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -425,6 +412,14 @@ img {
   fill: var(--customers-icon-hover);
 }
 
+.customers-link:focus {
+  border: 1px solid var(--border-customers-hover);
+}
+
+.customers-link:focus .customers-logo {
+  fill: var(--customers-icon-hover);
+}
+
 .customers-logo {
   fill: var(--customers-logo-color);
 }
@@ -432,10 +427,17 @@ img {
 /* Footer */
 
 .page-footer {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-footer-color);
+}
+
+.footer-positioning {
+  display: flex;
+}
+
+.address-wrapper {
+  margin-right: 70px;
 }
 
 .logo-footer {
@@ -449,10 +451,6 @@ img {
 
 .logo-footer-text {
   color: var(--logo-footer-text-color);
-}
-
-.address {
-  margin-right: 70px;
 }
 
 .address-item {
@@ -482,7 +480,7 @@ img {
   color: var(--accent-color);
 }
 
-.footer-soc-title {
+.footer-soc-text {
   font-size: 14px;
   line-height: 1.1429;
   text-transform: uppercase;
