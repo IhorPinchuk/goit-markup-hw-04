@@ -434,6 +434,7 @@ img {
 
 .footer-positioning {
   display: flex;
+  align-items: baseline;
 }
 
 .address-wrapper {
@@ -450,6 +451,7 @@ img {
 }
 
 .logo-footer-text {
+  margin-bottom: 0;
   color: var(--logo-footer-text-color);
 }
 
@@ -481,6 +483,7 @@ img {
 }
 
 .footer-soc-text {
+   font-weight: 700;
   font-size: 14px;
   line-height: 1.1429;
   text-transform: uppercase;
